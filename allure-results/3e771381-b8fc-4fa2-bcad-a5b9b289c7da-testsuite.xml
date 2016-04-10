@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1460228027962" stop="1460228065259">
+	<name>validating the calculator app</name>
+	<title>validating the calculator app</title>
+	<test-cases>
+		<test-case start="1460228027963" stop="1460228065258" status="passed">
+			<name>validate 1+1=2</name>
+			<title>validate 1+1=2</title>
+			<description></description>
+			<labels>
+			</labels>
+			<steps>
+			</steps>
+			<attachments>
+			</attachments>
+		</test-case>
+	</test-cases>
+</ns2:test-suite>

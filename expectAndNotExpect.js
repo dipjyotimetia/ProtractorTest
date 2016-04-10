@@ -1,5 +1,6 @@
-describe("validating the calculator app",function(){
+var logger = require('./log');
 
+describe("validating the calculator app",function(){
 
 	var expected_test;
 	beforeEach(function() {
@@ -10,10 +11,11 @@ describe("validating the calculator app",function(){
 		element(by.buttonText("Go!")).click();
 		//browser.pause();
 		expected_test=element(by.binding("latest")).getText();
-		
+		logger.log('info','validating the web name');
 //		element(by.binding("latest")).getText().then(function(text) {
 //			console.log(text);
 //		});
+		browser.sleep(2000);
 	});
 	
 
@@ -26,10 +28,10 @@ describe("validating the calculator app",function(){
 		element(by.binding("latest")).getText().then(function(text) {
 			console.log("Result is:"+text);
 			expect(parseInt(text)).toBe(2);
+			logger.log('info','validating the count');
+			browser.sleep(2000);
 		});
-		element(by.binding("result.timestamp")).getText().then(function(time) {
-			console.log(time);
-		});
+		
 	});
 //	it("validate 1+1=2",function(){
 //
