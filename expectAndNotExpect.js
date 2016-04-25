@@ -11,7 +11,7 @@ describe("validating the calculator app",function(){
 		element(by.buttonText("Go!")).click();
 		//browser.pause();
 		expected_test=element(by.binding("latest")).getText();
-		logger.log('info','validating the web name');
+		logger.log('info','validatinrg the web name');
 //		element(by.binding("latest")).getText().then(function(text) {
 //			console.log(text);
 //		});

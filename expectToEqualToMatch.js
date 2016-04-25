@@ -28,7 +28,7 @@ describe("validating the calculator app",function(){
 
 		expected_text.then(function(text){
 			console.log(text);
-			expect(title), 
+			expect(title).toBe("");
 		});
 	});
 });

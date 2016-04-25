@@ -7,12 +7,13 @@ exports.config = {
   },
   framework: 'jasmine2',
   //seleniumAddress: 'http://localhost:4444/wd/hub',    //reqired for manual web driver start
-  specs: ['expectAndNotExpect.js'],			//Test js  varible test
+  specs: ['fromFill.js'],			//Test js  varible test
   
   jasmineNodeOpts: {
 	  defaultTimeoutInterval: 40000
   },
   
+  // 1st type of reporter
   onPrepare : function() {
 	    var AllureReporter = require('jasmine-allure-reporter');
 	    var reporter = new AllureReporter({
@@ -23,12 +24,13 @@ exports.config = {
 	    jasmine.getEnv().addReporter(reporter);
 
 	    jasmine.getEnv().topSuite().afterEach({fn: function() {
-	        browser.takeScreenshot().then(function(png) {
+	        browser.takeScreenshot().then(function(jpeg) {
 	            allure.createAttachment('Screenshot', function() {
-	                return new Buffer(png, 'base64')
-	            }, 'image/png')();
+	                return new Buffer(jpeg, 'base64')
+	            }, 'image/jpeg')();
 	        })
 	    }});
 	}
+  
   
 }

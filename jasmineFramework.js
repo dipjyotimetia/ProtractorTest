@@ -33,4 +33,6 @@ describe("This is a section",function(){		// Section
 		it("Test case 4",function(){
 		
 		});
-)};
+	});
+});	
+	

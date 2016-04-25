@@ -16,7 +16,7 @@ describe("validating the calculator app",function(){
 		element(by.buttonText("Go!")).click();
 		
 		element(by.binding("latest")).getText().then(function(text){
-			console.log("Result is :"text);
+			console.log("Result is :"+text);
 		});
 	});
 	
@@ -27,6 +27,7 @@ describe("validating the calculator app",function(){
 		element(by.buttonText("Go!")).click();
 		
 		element(by.binding("latest")).getText().then(function(text){
-			console.log("Result is :"text);
+			console.log("Result is :"+text);
 	});
-});
+ });
+});	

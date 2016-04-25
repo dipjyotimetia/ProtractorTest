@@ -32,6 +32,8 @@
     "karma-jasmine": "0.3.5",
     "karma-phantomjs-launcher": "0.1.4",
     "random-strings": "0.0.1",
-    "jasmine-allure-reporter":"~1.1.0"
+    "jasmine-allure-reporter":"~1.1.0",
+    "winston":"~1.0.1",
+    "protractor-jasmine2-screenshot-reporter":"~1.0.1"
   }
 }
